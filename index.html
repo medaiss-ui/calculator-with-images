@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="TP ENSISA 1A IR - Calculatrice en JS">
+        <meta name="author" content="Jonathan Weber">
+        <title>Calculatrice JS</title>
+
+        <!-- Include Bootstrap CSS -->  
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+
+    <body>
+
+        <nav class="navbar" style="background-color: #e3f2fd;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="img/icons8-calculator.svg" alt="Logo" width="25" height="25" class="d-inline-block align-text-top">
+                Calculatrice JS V1.0
+              </a>
+            </div>
+        </nav>
+
+        <div class="alert alert-dark m-2 text-end fs-1" id="display" role="alert">
+            0
+        </div>
+
+        <div class="d-grid gap-4 p-2 d-md-flex">
+            <button type="button" class="btn btn-danger btn-lg  w-100" id="btn-AC">AC</button>
+            <button type="button" class="btn btn-danger btn-lg w-100"  id="btn-C">C</button>
+            <button type="button" class="btn btn-primary btn-lg w-100" id="btn-pm">+/-</button>
+            <button type="button" class="btn btn-primary btn-lg w-100" id="btn-percent">%</button>
+        </div>
+        <div class="d-grid gap-4 p-2 d-md-flex">
+            <button type="button" class="btn btn-secondary btn-lg  w-100" id="btn-7">7</button>
+            <button type="button" class="btn btn-secondary btn-lg w-100"  id="btn-8">8</button>
+            <button type="button" class="btn btn-secondary btn-lg w-100" id="btn-9">9</button>
+            <button type="button" class="btn btn-primary btn-lg w-100" id="btn-add">+</button>
+        </div>
+        <div class="d-grid gap-4 p-2 d-md-flex">
+            <button type="button" class="btn btn-secondary btn-lg w-100"  id="btn-4">4</button>
+            <button type="button" class="btn btn-secondary btn-lg w-100" id="btn-5">5</button>
+            <button type="button" class="btn btn-secondary btn-lg w-100" id="btn-6">6</button>
+            <button type="button" class="btn btn-primary btn-lg w-100" id="btn-sub">-</button>
+        </div>
+        <div class="d-grid gap-4 p-2 d-md-flex">
+            <button type="button" class="btn btn-secondary btn-lg w-100" id="btn-1">1</button>
+            <button type="button" class="btn btn-secondary btn-lg w-100" id="btn-2">2</button>
+            <button type="button" class="btn btn-secondary btn-lg w-100" id="btn-3">3</button>
+            <button type="button" class="btn btn-primary btn-lg w-100" id="btn-mult">*</button>
+        </div>
+        <div class="d-grid gap-4 p-2 d-md-flex">
+            <button type="button" class="btn btn-secondary btn-lg w-100" id="btn-0">0</button>
+            <button type="button" class="btn btn-secondary btn-lg w-100" id="btn-point">.</button>
+            <button type="button" class="btn btn-success btn-lg w-100" id="btn-eq">=</button>
+            <button type="button" class="btn btn-primary btn-lg w-100"  id="btn-div">/</button>
+        </div>
+
+        <!-- Carrousel de paysages -->
+        <div class="text-center mt-3">
+            <img
+                id="paysage"
+                src="img/paysage0.jpg"
+                class="img-fluid"
+                alt="Paysage de plage"
+                style="max-width: 600px;"
+            >
+        </div>
+        <!-- JS for bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <script src="js/jquery-4.0.0.js"></script>
+        <!-- JS du TP -->
+        <script src="js/tp1.js"></script>
+
+    </body>
+</html>
